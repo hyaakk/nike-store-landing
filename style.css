@@ -1,0 +1,300 @@
+body { background: #ffffff; 
+    font-family: "Verdana", Geneva, Tahoma, sans-serif; 
+    color: #222; 
+    margin: auto; 
+    padding: 20px; 
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topo {
+  padding: 18px 24px;
+}
+.topo-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  width: 140px;
+  height: auto;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+}
+hr{
+  color: #4cb92b;
+  width: 1100px;
+  height: 2px;
+  background-color: #4cb92b;
+  border-radius: 60px;
+  filter: drop-shadow(0 00px 90px rgb(76, 185, 43));
+}
+.menu a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+.menu a:hover {
+  color: #4cb92b;
+  transform: scale(1.1)
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 36px;
+  background: #ffffffa2;
+  border-radius: 14px;
+  box-shadow: 0 0 50px rgb(6, 128, 0);
+}
+
+
+.hero-left {
+  flex: 1 1 55%;
+  text-align: left;
+}
+.marca {
+  color: #292929;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 8px 0;
+}
+.hero-left h1 {
+  color: rgba(44, 99, 27, 0.765);
+  font-size: 3.4rem;
+  margin: 0 0 12px 0;
+  line-height: 1;
+  font-weight: 800;
+}
+.sub {
+  color: #292929;
+  font-size: 1rem;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+.descricao {
+  color: #6b6b6b90;
+  max-width: 520px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+
+.ctas { display: flex; gap: 12px; align-items: center; }
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 28px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.6px;
+}
+.btn.primary {
+  background:   #000000ee;
+  color: #ffffff;
+  border: 2px solid #ffffff2a;
+}
+.btn.ghost {
+  background: transparent;
+  color: #111;
+  border: 2px solid #111;
+}
+
+
+.hero-right {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.produto {
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+  transform: rotate(-8deg);
+  filter: drop-shadow(0 00px 90px rgb(76, 185, 43));
+  animation: flutuar 3.5s ease-in-out infinite;
+}
+@keyframes flutuar {
+  0%, 100% {
+    transform: rotate(-9deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-9deg) translateY(-19px);
+  }
+}
+
+/* ========================= */
+/* CATÁLOGO DE PRODUTOS */
+/* ========================= */
+
+#destaques {
+  text-align: center;
+  margin: 80px auto;
+}
+
+#destaques h1 {
+  color: #1c1c1c;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.catalogo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.produto-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 220px;
+  padding: 15px;
+  box-shadow: 0 0 20px rgba(76, 185, 43, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.produto-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+}
+
+.produto-card h3 {
+  color: #4cb92b;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.produto-card p {
+  color: #444;
+  font-weight: 600;
+}
+
+.produto-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 35px rgba(76, 185, 43, 0.5);
+}
+
+.produto-card:hover img {
+  transform: scale(1.1);
+}
+
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.produto-card {
+  animation: aparecer 0.8s ease forwards;
+}
+h4{
+  font-size: 8px;
+  color: #4444448f;
+}
+
+.sobre-nike {
+  position: fixed;
+  display: block;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  background: #0f0f0f;
+  color: #fff;
+  border-top: 5px solid #4cb92b;
+  opacity: 0.8;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 300px;
+  height: 40px;
+  line-height: 1.6;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  transform: translateY(-5px);
+  padding: 10px 20px;
+}
+
+.sobre-nike:hover {
+  opacity: 1.0;
+  max-width: 300px;
+  height: auto;
+  box-shadow: 0 0 25px #4cb92b;
+}
+
+.sobre-nike h2 {
+  color: #4cb92b;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.site-footer {
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-top: 3px solid #4cb92b;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  animation: fadeInFooter 1s ease-in;
+}
+
+.site-footer strong {
+  color: #4cb92b;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.site-footer strong:hover {
+  color: #8cff70;
+  text-shadow: 0 0 10px #4cb92b;
+}
+.icone {
+  
+  width: 40px;
+   filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(511%) hue-rotate(80deg) brightness(97%) contrast(97%);
+  transition: filter 0.3s;
+}
+
+.icone:hover {
+  border-radius: 90px;
+  filter: brightness(0) invert(0.6); 
+  box-shadow:  0 0 30px #000000;
+}
+
+.contato{
+  background-color: #0f0f0f;
+  color: #4cb92b;
+  text-align: center;
+  border-radius: 15px;
+  border-bottom: 4px solid #8cff70;
+}
+.contato p, a {
+  color: rgb(255, 255, 255);
+}

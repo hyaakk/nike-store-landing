@@ -7,7 +7,8 @@ Projeto desenvolvido em **HTML5 e CSS3**, com foco em **layout responsivo**, **s
 
 ## 🖥️ Demonstração
 
-![Preview do site]( https://hyaakk.github.io/nike-store-landing/)
+![Preview do site]
+https://hyaakk.github.io/nike-store-landing/
 
 ---
 

@@ -7,9 +7,7 @@ Projeto desenvolvido em **HTML5 e CSS3**, com foco em **layout responsivo**, **s
 
 ## 🖥️ Demonstração
 
-![Preview do site](img/Produto-header.png)
-
-> Página de destaque do Air Jordan 4 com design moderno e responsivo.
+![Preview do site]( https://hyaakk.github.io/nike-store-landing/)
 
 ---
 
